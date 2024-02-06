@@ -1,11 +1,12 @@
 
 import './App.css';
-import Header from './Components/Header';
+import AddDonors from './Components/AddDonors';
+
 
 function App() {
   return (
     <div >
-<Header/>
+<AddDonors/>
     </div>
   );
 }
