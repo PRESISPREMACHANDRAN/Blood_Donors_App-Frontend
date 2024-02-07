@@ -14,6 +14,7 @@ function App() {
 <ViewAllDonors/>
 <DeleteDonor/>
 <SearchDonor/>
+
     </div>
   );
 }
