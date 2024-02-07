@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <a class="navbar-brand" >
+        <Link class="navbar-brand" >
           Blood Donor App
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -21,18 +22,18 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             
-            <a class="nav-item nav-link" href="/add">
+            <Link class="nav-item nav-link" to="/">
               Add Donors
-            </a>
-            <a class="nav-item nav-link" href="delete">
+            </Link>
+            <Link class="nav-item nav-link" to="/delete">
               Delete Donor
-            </a>
-            <a class="nav-item nav-link" href="/search">
+            </Link>
+            <Link class="nav-item nav-link" to="/search">
              Search Donor
-            </a>
-            <a class="nav-item nav-link" href="/viewAll">
+            </Link>
+            <Link class="nav-item nav-link" to="/viewAll">
              View All Donors
-            </a>
+            </Link>
            
           </div>
         </div>
