@@ -6,7 +6,7 @@ import DeleteDonor from './Components/DeleteDonor';
 import SearchDonor from './Components/SearchDonor';
 
 import ViewAllDonors from './Components/ViewAllDonors';
-// import SearchDonor from './Components/SearchDonor';
+
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
  <Routes>
   <Route path='/' exact element={<AddDonors/>}/>
   <Route path='/delete'  element={<DeleteDonor/>}/>
-  {/* <Route path='/search'  element={<SearchDonor/>}/> */}
+  <Route path='/search'  element={<SearchDonor/>}/>
   <Route path='/viewAll'  element={<ViewAllDonors/>}/>
  </Routes>
  </BrowserRouter>

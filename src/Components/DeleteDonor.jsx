@@ -2,6 +2,15 @@ import React from 'react'
 import Header from './Header';
 
 const DeleteDonor = () => {
+
+
+    const[data,changeData]=useState({
+        "phoneNumber":""
+    })
+
+    
+
+
   return (
     <>
       <Header/>
@@ -11,7 +20,7 @@ const DeleteDonor = () => {
             <div className="row g-3">
               <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label htmlFor="" className="form-label">
-                  Blood Group
+                  Phone Number
                 </label>
                 <input type="text" className="form-control" />
               </div>
