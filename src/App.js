@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddDonors from './Components/AddDonors';
 import DeleteDonor from './Components/DeleteDonor';
+import SearchDonor from './Components/SearchDonor';
 
 import ViewAllDonors from './Components/ViewAllDonors';
 // import SearchDonor from './Components/SearchDonor';
@@ -10,6 +11,7 @@ import ViewAllDonors from './Components/ViewAllDonors';
 
 function App() {
   return (
+
  <BrowserRouter>
  <Routes>
   <Route path='/' exact element={<AddDonors/>}/>
@@ -18,6 +20,7 @@ function App() {
   <Route path='/viewAll'  element={<ViewAllDonors/>}/>
  </Routes>
  </BrowserRouter>
+
   );
 }
 
