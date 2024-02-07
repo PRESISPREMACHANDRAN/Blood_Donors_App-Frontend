@@ -1,6 +1,7 @@
 
 import './App.css';
 import AddDonors from './Components/AddDonors';
+
 import ViewAllDonors from './Components/ViewAllDonors';
 
 
@@ -9,6 +10,7 @@ function App() {
     <div >
 <AddDonors/>
 <ViewAllDonors/>
+
     </div>
   );
 }
