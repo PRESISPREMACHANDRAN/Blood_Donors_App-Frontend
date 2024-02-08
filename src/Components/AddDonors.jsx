@@ -58,18 +58,7 @@ const AddDonors = () => {
                   onChange={readValue}
                 />
               </div>
-              {/* <div className="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <label htmlFor="" className="form-label">
-                  Gender
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="gender"
-                  value={formValue.gender}
-                  onChange={readValue}
-                />
-              </div> */}
+              
 
               <div className="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div className="row">
