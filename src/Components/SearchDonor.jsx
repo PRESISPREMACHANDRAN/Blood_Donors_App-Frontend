@@ -40,13 +40,7 @@ const [response,changeResponse]=useState([])
                 <label htmlFor="" className="form-label">
                   Blood Group
                 </label>
-                {/* <input
-                  type="text"
-                  className="form-control"
-                  name="bloodGroup"
-                  value={data.bloodGroup}
-                  onChange={readValue}
-                /> */}
+                
 
                 <select
                   id=""
