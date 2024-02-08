@@ -40,7 +40,7 @@ const ViewAllDonors = () => {
                     {donors.data.map((value, index) => {
                       return (
                         <tr>
-                          <th scope="row">1</th>
+                          <th scope="row">{index+1}</th>
                           <td>{value.firstName}</td>
                           <td>{value.lastName}</td>
                           <td>{value.gender}</td>
