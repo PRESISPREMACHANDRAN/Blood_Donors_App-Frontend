@@ -6,7 +6,7 @@ const ViewAllDonors = () => {
     const [donors, changeDonors] = useState({ data: [] });
 
     const fetchData = () => {
-      axios.post("http://localhost:4000/viewAll").then((response) => {
+      axios.post("http://54.173.32.19:4000/viewAll").then((response) => {
         console.log(response.data);
         changeDonors(response.data);
       });

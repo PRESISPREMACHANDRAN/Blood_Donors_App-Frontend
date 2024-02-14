@@ -19,13 +19,15 @@ const AddDonors = () => {
 
       const submitValue = () => {
         console.log(formValue);
-        axios.post("http://localhost:4000/add", formValue).then((response) => {
-          if (response.data.status == "success") {
-            alert("successfully added");
-          } else {
-            alert("error....");
-          }
-        });
+        axios
+          .post("http://54.173.32.19:4000/add", formValue)
+          .then((response) => {
+            if (response.data.status == "success") {
+              alert("successfully added");
+            } else {
+              alert("error....");
+            }
+          });
       };
   return (
     <>

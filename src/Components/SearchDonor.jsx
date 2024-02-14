@@ -14,18 +14,15 @@ const [response,changeResponse]=useState([])
 
     const submitValue=()=>{
         console.log(data)
-        axios.post("http://localhost:4000/search",data).then(
-            (response)=>{
-                console.log(response)
-                if(response.data.data.length===0){
-                    alert("Donor Not Found...")
-                    changeResponse([])
-                }else{
-                    changeResponse(response.data.data)
-                    
-                }
-            }
-        )
+        axios.post("http://54.173.32.19:4000/search", data).then((response) => {
+          console.log(response);
+          if (response.data.data.length === 0) {
+            alert("Donor Not Found...");
+            changeResponse([]);
+          } else {
+            changeResponse(response.data.data);
+          }
+        });
     }
 
 

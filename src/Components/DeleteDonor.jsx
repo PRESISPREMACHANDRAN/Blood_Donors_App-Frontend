@@ -16,17 +16,15 @@ const DeleteDonor = () => {
 
     const submitValue=()=>{
       console.log(data)
-      axios.post("http://localhost:4000/delete",data).then(
-        (response)=>{
-          console.log(response)
+      axios.post("http://54.173.32.19:4000/delete", data).then((response) => {
+        console.log(response);
 
-          if(response.data.status==="success"){
-            alert("Donor deleted....")
-          }else{
-            alert("Donor does not exist....")
-          }
+        if (response.data.status === "success") {
+          alert("Donor deleted....");
+        } else {
+          alert("Donor does not exist....");
         }
-      )
+      });
     }
 
     
